@@ -1,0 +1,99 @@
+college_id,college_name,state,course,quota,category,round,opening_rank,closing_rank,seat_type,annual_tuition_fee_inr
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,OPEN,Round 1,1,57,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,OPEN,Round 2,58,61,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,OBC,Round 1,62,254,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,OBC,Round 2,255,258,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,EWS,Round 1,74,232,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,SC,Round 1,105,980,Government,1628
+AIIMS-DEL-01,All India Institute of Medical Sciences (AIIMS),Delhi,MBBS,AIQ,ST,Round 1,410,1825,Government,1628
+JIPMER-PUD-02,JIPMER Puducherry,Puducherry,MBBS,AIQ,OPEN,Round 1,60,277,Government,14910
+JIPMER-PUD-02,JIPMER Puducherry,Puducherry,MBBS,AIQ,OBC,Round 1,280,592,Government,14910
+JIPMER-PUD-02,JIPMER Puducherry,Puducherry,MBBS,AIQ,SC,Round 1,1200,3420,Government,14910
+JIPMER-PUD-02,JIPMER Puducherry,Puducherry,MBBS,AIQ,ST,Round 1,2800,6890,Government,14910
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,OPEN,Round 1,58,85,Government,4445
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,OPEN,Round 2,86,107,Government,4445
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,OBC,Round 1,114,395,Government,4445
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,EWS,Round 1,120,412,Government,4445
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,SC,Round 1,1015,1650,Government,4445
+MAMC-DEL-03,Maulana Azad Medical College (MAMC),Delhi,MBBS,AIQ,ST,Round 1,2100,3450,Government,4445
+VMMC-DEL-04,Vardhman Mahavir Medical College & Safdarjung Hospital,Delhi,MBBS,AIQ,OPEN,Round 1,88,113,Government,33500
+VMMC-DEL-04,Vardhman Mahavir Medical College & Safdarjung Hospital,Delhi,MBBS,AIQ,OPEN,Round 2,114,142,Government,33500
+VMMC-DEL-04,Vardhman Mahavir Medical College & Safdarjung Hospital,Delhi,MBBS,AIQ,OBC,Round 1,125,480,Government,33500
+VMMC-DEL-04,Vardhman Mahavir Medical College & Safdarjung Hospital,Delhi,MBBS,AIQ,EWS,Round 1,130,520,Government,33500
+VMMC-DEL-04,Vardhman Mahavir Medical College & Safdarjung Hospital,Delhi,MBBS,AIQ,SC,Round 1,1200,2150,Government,33500
+LHMC-DEL-05,Lady Hardinge Medical College (LHMC),Delhi,MBBS,AIQ,OPEN,Round 1,120,485,Government,3350
+LHMC-DEL-05,Lady Hardinge Medical College (LHMC),Delhi,MBBS,AIQ,OBC,Round 1,510,1120,Government,3350
+LHMC-DEL-05,Lady Hardinge Medical College (LHMC),Delhi,MBBS,AIQ,SC,Round 1,2200,4500,Government,3350
+UCMS-DEL-06,University College of Medical Sciences (UCMS),Delhi,MBBS,AIQ,OPEN,Round 1,145,304,Government,7075
+UCMS-DEL-06,University College of Medical Sciences (UCMS),Delhi,MBBS,AIQ,OBC,Round 1,320,780,Government,7075
+UCMS-DEL-06,University College of Medical Sciences (UCMS),Delhi,MBBS,AIQ,SC,Round 1,1800,3650,Government,7075
+BHU-VAR-07,Institute of Medical Sciences (IMS BHU),Uttar Pradesh,MBBS,AIQ,OPEN,Round 1,310,858,Government,29800
+BHU-VAR-07,Institute of Medical Sciences (IMS BHU),Uttar Pradesh,MBBS,AIQ,OBC,Round 1,890,1650,Government,29800
+BHU-VAR-07,Institute of Medical Sciences (IMS BHU),Uttar Pradesh,MBBS,AIQ,EWS,Round 1,920,1720,Government,29800
+BHU-VAR-07,Institute of Medical Sciences (IMS BHU),Uttar Pradesh,MBBS,AIQ,SC,Round 1,4500,8900,Government,29800
+AIIMS-JODH-08,AIIMS Jodhpur,Rajasthan,MBBS,AIQ,OPEN,Round 1,150,534,Government,1628
+AIIMS-JODH-08,AIIMS Jodhpur,Rajasthan,MBBS,AIQ,OBC,Round 1,550,1180,Government,1628
+AIIMS-JODH-08,AIIMS Jodhpur,Rajasthan,MBBS,AIQ,SC,Round 1,2800,5400,Government,1628
+AIIMS-BHOP-09,AIIMS Bhopal,Madhya Pradesh,MBBS,AIQ,OPEN,Round 1,210,621,Government,1628
+AIIMS-BHOP-09,AIIMS Bhopal,Madhya Pradesh,MBBS,AIQ,OBC,Round 1,650,1350,Government,1628
+AIIMS-BHOP-09,AIIMS Bhopal,Madhya Pradesh,MBBS,AIQ,SC,Round 1,3100,5900,Government,1628
+AIIMS-BHUB-10,AIIMS Bhubaneswar,Odisha,MBBS,AIQ,OPEN,Round 1,180,564,Government,1628
+AIIMS-BHUB-10,AIIMS Bhubaneswar,Odisha,MBBS,AIQ,OBC,Round 1,600,1290,Government,1628
+AIIMS-RISH-11,AIIMS Rishikesh,Uttarakhand,MBBS,AIQ,OPEN,Round 1,250,785,Government,1628
+AIIMS-RISH-11,AIIMS Rishikesh,Uttarakhand,MBBS,AIQ,OBC,Round 1,810,1620,Government,1628
+AIIMS-PAT-12,AIIMS Patna,Bihar,MBBS,AIQ,OPEN,Round 1,500,1520,Government,1628
+AIIMS-PAT-12,AIIMS Patna,Bihar,MBBS,AIQ,OBC,Round 1,1550,2350,Government,1628
+AIIMS-RAIP-13,AIIMS Raipur,Chhattisgarh,MBBS,AIQ,OPEN,Round 1,650,1480,Government,1628
+AIIMS-RAIP-13,AIIMS Raipur,Chhattisgarh,MBBS,AIQ,OBC,Round 1,1500,2410,Government,1628
+KGMU-LKO-14,King George Medical University (KGMU),Uttar Pradesh,MBBS,AIQ,OPEN,Round 1,1200,2098,Government,54900
+KGMU-LKO-14,King George Medical University (KGMU),Uttar Pradesh,MBBS,AIQ,OBC,Round 1,2200,3150,Government,54900
+KGMU-LKO-14,King George Medical University (KGMU),Uttar Pradesh,MBBS,AIQ,SC,Round 1,15400,28500,Government,54900
+KGMU-LKO-14,King George Medical University (KGMU),Uttar Pradesh,MBBS,State Quota,OPEN,Round 1,2500,4120,Government,54900
+KGMU-LKO-14,King George Medical University (KGMU),Uttar Pradesh,MBBS,State Quota,OBC,Round 1,4200,5890,Government,54900
+GSVM-KAN-15,GSVM Medical College Kanpur,Uttar Pradesh,MBBS,AIQ,OPEN,Round 1,3500,5800,Government,36000
+GSVM-KAN-15,GSVM Medical College Kanpur,Uttar Pradesh,MBBS,State Quota,OPEN,Round 1,6100,9200,Government,36000
+GSMC-MUM-16,Seth GS Medical College & KEM Hospital,Maharashtra,MBBS,AIQ,OPEN,Round 1,450,980,Government,134000
+GSMC-MUM-16,Seth GS Medical College & KEM Hospital,Maharashtra,MBBS,AIQ,OBC,Round 1,1100,2450,Government,134000
+GSMC-MUM-16,Seth GS Medical College & KEM Hospital,Maharashtra,MBBS,State Quota,OPEN,Round 1,1200,2850,Government,134000
+GMC-MUM-17,Grant Government Medical College & JJ Hospital,Maharashtra,MBBS,AIQ,OPEN,Round 1,1200,2850,Government,134000
+GMC-MUM-17,Grant Government Medical College & JJ Hospital,Maharashtra,MBBS,State Quota,OPEN,Round 1,3100,5400,Government,134000
+BJMC-PUN-18,B.J. Government Medical College Pune,Maharashtra,MBBS,AIQ,OPEN,Round 1,1500,3200,Government,134000
+BJMC-PUN-18,B.J. Government Medical College Pune,Maharashtra,MBBS,State Quota,OPEN,Round 1,3500,6800,Government,134000
+BJMC-AHM-19,B.J. Medical College Ahmedabad,Gujarat,MBBS,AIQ,OPEN,Round 1,650,1450,Government,25000
+BJMC-AHM-19,B.J. Medical College Ahmedabad,Gujarat,MBBS,State Quota,OPEN,Round 1,1500,4200,Government,25000
+SMS-JAI-20,SMS Medical College Jaipur,Rajasthan,MBBS,AIQ,OPEN,Round 1,550,1280,Government,45000
+SMS-JAI-20,SMS Medical College Jaipur,Rajasthan,MBBS,State Quota,OPEN,Round 1,1400,3100,Government,45000
+MMC-CHE-21,Madras Medical College (MMC),Tamil Nadu,MBBS,AIQ,OPEN,Round 1,480,1210,Government,18073
+MMC-CHE-21,Madras Medical College (MMC),Tamil Nadu,MBBS,AIQ,OBC,Round 1,1250,2100,Government,18073
+MMC-CHE-21,Madras Medical College (MMC),Tamil Nadu,MBBS,State Quota,OPEN,Round 1,1500,3800,Government,18073
+SMC-CHE-22,Stanley Medical College Chennai,Tamil Nadu,MBBS,AIQ,OPEN,Round 1,1800,3950,Government,18073
+SMC-CHE-22,Stanley Medical College Chennai,Tamil Nadu,MBBS,State Quota,OPEN,Round 1,4200,7500,Government,18073
+BMC-BLR-23,Bangalore Medical College and Research Institute (BMCRI),Karnataka,MBBS,AIQ,OPEN,Round 1,850,1540,Government,59850
+BMC-BLR-23,Bangalore Medical College and Research Institute (BMCRI),Karnataka,MBBS,AIQ,OBC,Round 1,1800,3200,Government,59850
+BMC-BLR-23,Bangalore Medical College and Research Institute (BMCRI),Karnataka,MBBS,State Quota,OPEN,Round 1,2100,4500,Government,59850
+MMC-MYS-24,Mysore Medical College and Research Institute,Karnataka,MBBS,AIQ,OPEN,Round 1,2500,5600,Government,59850
+IPGMER-KOL-25,IPGMER & SSKM Hospital,West Bengal,MBBS,AIQ,OPEN,Round 1,1500,3450,Government,9000
+IPGMER-KOL-25,IPGMER & SSKM Hospital,West Bengal,MBBS,AIQ,OBC,Round 1,3600,5200,Government,9000
+IPGMER-KOL-25,IPGMER & SSKM Hospital,West Bengal,MBBS,State Quota,OPEN,Round 1,4100,8950,Government,9000
+MCK-KOL-26,Medical College Kolkata (MCK),West Bengal,MBBS,AIQ,OPEN,Round 1,1100,2800,Government,9000
+MCK-KOL-26,Medical College Kolkata (MCK),West Bengal,MBBS,State Quota,OPEN,Round 1,2900,6400,Government,9000
+NRS-KOL-27,NRS Medical College Kolkata,West Bengal,MBBS,AIQ,OPEN,Round 1,3200,6100,Government,9000
+NRS-KOL-27,NRS Medical College Kolkata,West Bengal,MBBS,State Quota,OPEN,Round 1,6500,11200,Government,9000
+RGKAR-KOL-28,R.G. Kar Medical College Kolkata,West Bengal,MBBS,AIQ,OPEN,Round 1,3800,7200,Government,9000
+RGKAR-KOL-28,R.G. Kar Medical College Kolkata,West Bengal,MBBS,State Quota,OPEN,Round 1,7800,12800,Government,9000
+GMC-KOZ-29,Government Medical College Kozhikode,Kerala,MBBS,AIQ,OPEN,Round 1,1200,2950,Government,27500
+GMC-TVM-30,Government Medical College Thiruvananthapuram,Kerala,MBBS,AIQ,OPEN,Round 1,980,2400,Government,27500
+PMCH-PAT-31,Patna Medical College (PMCH),Bihar,MBBS,AIQ,OPEN,Round 1,2800,5400,Government,18000
+PMCH-PAT-31,Patna Medical College (PMCH),Bihar,MBBS,State Quota,OPEN,Round 1,5900,8800,Government,18000
+STJOHN-BLR-32,St. John's Medical College Bangalore,Karnataka,MBBS,Management,OPEN,Round 1,6500,14500,Private/Trust,730000
+KAST-MNP-33,Kasturba Medical College (KMC) Manipal,Karnataka,MBBS,Deemed,OPEN,Round 1,15000,48000,Private/Deemed,1780000
+KAST-MNP-33,Kasturba Medical College (KMC) Manipal,Karnataka,MBBS,Deemed,OPEN,Round 2,48100,54500,Private/Deemed,1780000
+KAST-MLR-34,Kasturba Medical College (KMC) Mangalore,Karnataka,MBBS,Deemed,OPEN,Round 1,28000,58000,Private/Deemed,1780000
+HIMSR-DEL-35,Hamdard Institute of Medical Sciences (HIMSR),Delhi,MBBS,Management,OPEN,Round 1,18000,42000,Private/Deemed,1450000
+DYPAT-MUM-36,Dr. D.Y. Patil Medical College Navi Mumbai,Maharashtra,MBBS,Deemed,OPEN,Round 1,120000,485000,Private/Deemed,2600000
+SRM-CHE-37,SRM Medical College Hospital Chennai,Tamil Nadu,MBBS,Deemed,OPEN,Round 1,150000,550000,Private/Deemed,2500000
+MAIDS-DEL-38,Maulana Azad Institute of Dental Sciences (MAIDS),Delhi,BDS,AIQ,OPEN,Round 1,4500,9850,Government,4120
+MAIDS-DEL-38,Maulana Azad Institute of Dental Sciences (MAIDS),Delhi,BDS,AIQ,OBC,Round 1,10200,16500,Government,4120
+MAIDS-DEL-38,Maulana Azad Institute of Dental Sciences (MAIDS),Delhi,BDS,AIQ,SC,Round 1,35000,62000,Government,4120
+BHU-DENT-39,Faculty of Dental Sciences IMS BHU,Uttar Pradesh,BDS,AIQ,OPEN,Round 1,12000,22400,Government,22000
+GDC-MUM-40,Government Dental College Mumbai,Maharashtra,BDS,AIQ,OPEN,Round 1,15000,28500,Government,38500
