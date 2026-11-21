@@ -45,7 +45,7 @@ class CacheEntry:
 class SemanticCache:
     def __init__(
         self,
-        similarity_threshold: float = 0.75,
+        similarity_threshold: float = 0.72,
         max_entries: int = 1000,
         ttl_seconds: int = 86400,
         model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
@@ -74,8 +74,8 @@ class SemanticCache:
             emb = self.model.encode(text, convert_to_numpy=True, normalize_embeddings=True)
             return emb.tolist()
 
-        clean_text = text.lower().replace("?", "").replace(",", "").replace(".", "").replace("-", " ")
-        raw_words = re.findall(r"\b[a-z0-9]+\b", clean_text)
+        clean_text = text.lower().replace("?", " ").replace(",", " ").replace(".", " ").replace("-", " ").replace("_", " ")
+        raw_words = re.findall(r"[a-z0-9]+", clean_text)
         tokens = [SYNONYMS.get(w, w) for w in raw_words if w not in STOPWORDS]
 
         ngrams = []
@@ -118,6 +118,16 @@ class SemanticCache:
         if not self.entries:
             self.misses += 1
             return None, 0.0
+
+        q_clean = query.strip().lower()
+        for entry in self.entries:
+            if entry.query.strip().lower() == q_clean:
+                self.hits += 1
+                entry.hit_count += 1
+                entry.last_accessed = time.time()
+                est_saved = 450.0
+                self.total_latency_saved_ms += est_saved
+                return entry.response, 1.0
 
         q_vec = self._encode(query)
         best_entry = None
