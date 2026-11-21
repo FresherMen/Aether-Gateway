@@ -7,7 +7,7 @@ ROOT_DIR = Path(__file__).resolve().parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from core.rate_limiter import DualTokenBucketRateLimiter
+from core.rate_limiter import DualRateLimiter, RateLimitResult
 from core.semantic_cache import SemanticCache
 from agents.orchestrator import MultiAgentCounsellingOrchestrator
 from services.counsel_engine.engine.rag_pipeline import NEETCounsellingRAG
@@ -23,7 +23,7 @@ st.set_page_config(
 
 @st.cache_resource
 def get_gateway_components():
-    limiter = DualTokenBucketRateLimiter(default_rpm_limit=60, default_tpm_limit=50000)
+    limiter = DualRateLimiter(default_rpm=60, default_tpm=50000)
     cache = SemanticCache(similarity_threshold=0.72)
     orchestrator = MultiAgentCounsellingOrchestrator(data_csv_path=CSV_PATH, semantic_cache=cache)
     rag = NEETCounsellingRAG()
@@ -90,10 +90,10 @@ with tab1:
 
     if st.button("Generate Multi-Agent Consultation Strategy", type="primary"):
         client_ip = "127.0.0.1"
-        allowed, status = limiter.consume(client_ip, tokens=50)
+        res_limit = limiter.check_sync(client_ip, estimated_tokens=50)
 
-        if not allowed:
-            st.error(f"⚠️ Gateway Throttled: HTTP 429 Too Many Requests. Retry after {status.get('retry_after_seconds', 1)}s.")
+        if not res_limit.allowed:
+            st.error(f"⚠️ Gateway Throttled: HTTP 429 Too Many Requests. Retry after {res_limit.retry_after:.2f}s.")
         else:
             with st.spinner("Orchestrating agents through Aether-Gateway..."):
                 res = orchestrator.consult(
@@ -144,10 +144,10 @@ with tab2:
 
     if st.button("Submit Question", type="primary") and query_input:
         client_ip = "127.0.0.1"
-        allowed, status = limiter.consume(client_ip, tokens=30)
+        res_limit = limiter.check_sync(client_ip, estimated_tokens=30)
 
-        if not allowed:
-            st.error("⚠️ Rate Limit Exceeded (HTTP 429). Please wait a few seconds.")
+        if not res_limit.allowed:
+            st.error(f"⚠️ Rate Limit Exceeded (HTTP 429). Please wait {res_limit.retry_after:.2f} seconds.")
         else:
             cached_ans, sim = cache.lookup(query_input)
 
@@ -179,13 +179,15 @@ with tab3:
     st.markdown("Real-time monitoring of Token-Bucket Rate Limiter and Semantic Vector Cache.")
 
     ip = "127.0.0.1"
-    bucket_status = limiter.get_status(ip)
+    entry = limiter._buckets.get(ip)
+    rem_req = int(entry["rpm"].tokens) if entry else 60
+    rem_tok = int(entry["tpm"].tokens) if entry else 50000
 
     m1, m2, m3, m4 = st.columns(4)
     with m1:
-        st.metric("Requests Remaining", f"{bucket_status.get('remaining_requests', 0):.0f} / {bucket_status.get('rpm_limit', 60)}")
+        st.metric("Requests Remaining", f"{rem_req} / 60")
     with m2:
-        st.metric("Tokens Remaining", f"{bucket_status.get('remaining_tokens', 0):.0f} / {bucket_status.get('tpm_limit', 50000)}")
+        st.metric("Tokens Remaining", f"{rem_tok} / 50000")
     with m3:
         st.metric("Total Cached Entries", len(cache.entries))
     with m4:
