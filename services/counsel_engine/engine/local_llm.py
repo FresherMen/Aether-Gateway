@@ -3,7 +3,11 @@ import json
 import urllib.request
 import urllib.error
 from typing import Optional, Dict, Any
-from engine.config import RAGConfig, default_config
+
+try:
+    from .config import RAGConfig, default_config
+except ImportError:
+    from engine.config import RAGConfig, default_config
 
 
 class LocalLLMClient:

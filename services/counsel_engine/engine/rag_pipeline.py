@@ -1,9 +1,15 @@
 import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
-from engine.config import RAGConfig, default_config, DATA_DIR
-from engine.vector_store import VectorStoreManager
-from engine.local_llm import LocalLLMClient
+
+try:
+    from .config import RAGConfig, default_config, DATA_DIR
+    from .vector_store import VectorStoreManager
+    from .local_llm import LocalLLMClient
+except ImportError:
+    from engine.config import RAGConfig, default_config, DATA_DIR
+    from engine.vector_store import VectorStoreManager
+    from engine.local_llm import LocalLLMClient
 
 
 class NEETCounsellingRAG:

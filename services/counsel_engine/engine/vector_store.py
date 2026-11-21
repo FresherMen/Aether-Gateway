@@ -2,8 +2,13 @@ import os
 import re
 from pathlib import Path
 from typing import List, Dict, Any, Tuple, Optional
-from engine.config import RAGConfig, default_config, CHROMA_PERSIST_DIR
-from engine.loader import Document, load_all_documents
+
+try:
+    from .config import RAGConfig, default_config, CHROMA_PERSIST_DIR
+    from .loader import Document, load_all_documents
+except ImportError:
+    from engine.config import RAGConfig, default_config, CHROMA_PERSIST_DIR
+    from engine.loader import Document, load_all_documents
 
 try:
     import chromadb
